@@ -5,15 +5,15 @@ package com.java.xdh.factory.abstract1;
  * @version 1.0
  * @time 2021/1/13 0013
  */
-public class XiaomiFactroy implements IProductFactory{
+public class XiaomiFactory implements IProductFactory{
 
     @Override
     public IphoneProduct iphoneProduct() {
-        return null;
+        return new XiaomiPhone();
     }
 
     @Override
     public IRouterProduct irouterProduct() {
-        return null;
+        return new XiaomiRouter();
     }
 }
