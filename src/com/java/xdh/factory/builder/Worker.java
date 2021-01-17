@@ -18,7 +18,7 @@ public class Worker extends Builder{
     }
 
     @Override
-    void builderA() {
+    protected void builderA() {
         product.setBuilderA("地基");
         System.out.println(product.getBuilderA());
     }

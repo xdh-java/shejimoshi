@@ -9,10 +9,11 @@ public class Director {
     //这是第四个，指挥者去指挥工人建造完成。
 
     public Product build(Builder builder){
-        builder.builderA();
         builder.builderB();
+        builder.builderA();
         builder.builderC();
         builder.builderD();
+
         return builder.getProduct();
     }
 }

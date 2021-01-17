@@ -1,39 +1,40 @@
-package com.java.xdh.factory.builder;
+package com.java.xdh.factory.builder.jianzao;
 
 /**
  * @author 薛登辉
- * @time 2021/1/13 0013 16:50
+ * @time 2021/1/17 0017 19:44
  * @description 这是我的代码风格
  */
-public class Worker2 extends Builder{
+public class WorkerProduct extends Builder {
+
 
     private Product product;
 
-    public Worker2() {
-        product = new Product();
+    public WorkerProduct() {
+       product = new Product();
     }
 
     @Override
-    protected void builderA() {
-        product.setBuilderA("录取通知书");
+    void BuilderA() {
+        product.setBuilderA("地基");
         System.out.println(product.getBuilderA());
     }
 
     @Override
-    void builderB() {
-        product.setBuilderB("缴纳学费");
+    void BuilderB() {
+        product.setBuilderB("钢筋");
         System.out.println(product.getBuilderB());
     }
 
     @Override
-    void builderC() {
-        product.setBuilderC("办理学籍");
+    void BuilderC() {
+        product.setBuilderC("水泥");
         System.out.println(product.getBuilderC());
     }
 
     @Override
-    void builderD() {
-        product.setBuilderD("入住宿舍");
+    void BuiledrD() {
+        product.setBuilderD("地板");
         System.out.println(product.getBuilderD());
     }
 
